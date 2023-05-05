@@ -1,5 +1,4 @@
 export default function Suggestion(props) {
-
     return(
         <div class="sugestao">
         <div class="usuario">
