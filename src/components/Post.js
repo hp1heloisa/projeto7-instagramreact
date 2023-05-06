@@ -5,6 +5,8 @@ export default function Post(props) {
     let [botaoClasse, setBotaoClasse] = useState('nada');
     let [salva,setSalva] = useState("bookmark-outline");
     let [curtidas,setCurtidas] = useState(props.numero);
+    let [botaoClasseImg, setBotaoClasseImg] = useState('nada');
+
 
     function curtir(){
         if (coracao=="heart-outline"){
@@ -27,6 +29,8 @@ export default function Post(props) {
         setCurtidas(
             parseFloat(props.numero.replace(".", ""))+1
             );
+        setBotaoClasseImg("teste");
+        setTimeout(()=>setBotaoClasseImg("nada"), 500);
     }
 
     function salvar() {
@@ -50,6 +54,7 @@ export default function Post(props) {
           </div>
           <div class="conteudo">
             <img src={props.srcConteudo} alt={props.altConteudo} data-test="post-image" onDoubleClick={curtirImagem}/>
+            <ion-icon name="heart" class={botaoClasseImg}></ion-icon>
           </div>
           <div class="fundo">
             <div class="acoes">

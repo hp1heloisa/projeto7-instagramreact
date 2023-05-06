@@ -311,3 +311,29 @@ ion-icon {
 .like{
   color: red;
 }
+
+.conteudo{
+  position: relative;
+}
+
+.conteudo ion-icon{
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+}
+
+.nada{
+  z-index: -1;
+}
+
+.teste{
+  font-size: 200px;
+}
+
+/* .scale-in-center {
+	-webkit-animation: scale-in-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+} */
