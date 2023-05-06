@@ -13,7 +13,7 @@ export default function Post(props) {
             setCoracao("heart");
             setBotaoClasse("like");
             setCurtidas(
-                parseFloat(props.numero.replace(".", ""))+1
+                (Number(props.numero)+0.001).toFixed(3)
                 );
                 
         }else{
@@ -27,7 +27,7 @@ export default function Post(props) {
         setCoracao("heart");
         setBotaoClasse("like");
         setCurtidas(
-            parseFloat(props.numero.replace(".", ""))+1
+            (Number(props.numero)+0.001).toFixed(3)
             );
         setBotaoClasseImg("teste");
         setTimeout(()=>setBotaoClasseImg("nada"), 500);

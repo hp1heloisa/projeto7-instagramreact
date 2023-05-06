@@ -1,7 +1,7 @@
 import Story from "./Story";
 
 export default function Stories() {
-    
+
     const listStory = [
         <Story src="assets/img/9gag.svg" alt="9gag" nome="9gag" />,
         <Story src="assets/img/meowed.svg" alt="meowed" nome="meowed" />,
