@@ -42,22 +42,22 @@ export default function Post(props) {
     }
 
     return(
-        <div class="post" data-test="post">
-          <div class="topo">
-            <div class="usuario">
+        <div className="post" data-test="post">
+          <div className="topo">
+            <div className="usuario">
               <img src={props.srcUsuario} alt={props.altUsuario}/>
                     {props.altUsuario}
             </div>
-            <div class="acoes">
+            <div className="acoes">
               <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
           </div>
-          <div class="conteudo">
+          <div className="conteudo">
             <img src={props.srcConteudo} alt={props.altConteudo} data-test="post-image" onDoubleClick={curtirImagem}/>
             <ion-icon name="heart" class={botaoClasseImg}></ion-icon>
           </div>
-          <div class="fundo">
-            <div class="acoes">
+          <div className="fundo">
+            <div className="acoes">
               <div>
                 <ion-icon name={coracao} data-test="like-post" class={botaoClasse} onClick={curtir}></ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>
@@ -67,9 +67,9 @@ export default function Post(props) {
                 <ion-icon name={salva} data-test="save-post" onClick={salvar}></ion-icon>
               </div>
             </div>
-            <div class="curtidas">
+            <div className="curtidas">
               <img src={props.srcCurtidas} alt={props.altCurtidas}/>
-              <div class="texto" data-test="likes-number">
+              <div className="texto" data-test="likes-number">
                 Curtido por <strong>{props.altCurtidas}</strong> e <strong>outras {curtidas} pessoas</strong>
               </div>
             </div>

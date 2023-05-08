@@ -18,9 +18,9 @@ export default function Posts() {
     ]
 
     return(
-        <div class="posts">
+        <div className="posts">
             <ul>
-                {listPost.map(Post => <li>{Post}</li>)}
+                {listPost.map((Post,i) => <li key={i}>{Post}</li>)}
             </ul>
         </div>
     )

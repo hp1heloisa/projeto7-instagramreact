@@ -11,13 +11,13 @@ export default function Suggestions() {
     ]
 
     return(
-        <div class="sugestoes">
-            <div class="titulo">
+        <div className="sugestoes">
+            <div className="titulo">
                 Sugestões para você
                 <div>Ver tudo</div>
             </div>
             <ul>
-                {listaSugestoes.map(Sugestao => <li>{Sugestao}</li>)}
+                {listaSugestoes.map((Sugestao, i) => <li key={i}>{Sugestao}</li>)}
             </ul>
       </div>
     )

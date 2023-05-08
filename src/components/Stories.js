@@ -14,11 +14,11 @@ export default function Stories() {
     ]
 
     return(
-        <div class="stories">
-            <ul class="listaStories">
-                {listStory.map(Story => <li>{Story}</li>)}
+        <div className="stories">
+            <ul className="listaStories">
+                {listStory.map((Story, i) => <li key={i}>{Story}</li>)}
             </ul>
-            <div class="setinha">
+            <div className="setinha">
                 <ion-icon name="chevron-forward-circle"></ion-icon>
             </div>
         </div>
