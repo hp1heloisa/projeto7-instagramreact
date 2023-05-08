@@ -67,9 +67,9 @@ export default function Post(props) {
                 <ion-icon name={salva} data-test="save-post" onClick={salvar}></ion-icon>
               </div>
             </div>
-            <div class="curtidas">
+            <div className="curtidas">
               <img src={props.srcCurtidas} alt={props.altCurtidas}/>
-              <div class="texto" data-test="likes-number">
+              <div className="texto" data-test="likes-number">
                 Curtido por <strong>{props.altCurtidas}</strong> e <strong>outras {curtidas} pessoas</strong>
               </div>
             </div>
