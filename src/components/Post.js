@@ -13,7 +13,7 @@ export default function Post(props) {
             setCoracao("heart");
             setBotaoClasse("like");
             setCurtidas(
-                (Number(props.numero)+0.001).toFixed(3)
+               ((Number(props.numero.replace(/\./g,""))+1).toLocaleString()).replace(/,/g,".")
                 );
                 
         }else{
@@ -27,7 +27,7 @@ export default function Post(props) {
         setCoracao("heart");
         setBotaoClasse("like");
         setCurtidas(
-            (Number(props.numero)+0.001).toFixed(3)
+          ((Number(props.numero.replace(/\./g,""))+1).toLocaleString()).replace(/,/g,".")
             );
         setBotaoClasseImg("teste");
         setTimeout(()=>setBotaoClasseImg("nada"), 500);
@@ -67,9 +67,9 @@ export default function Post(props) {
                 <ion-icon name={salva} data-test="save-post" onClick={salvar}></ion-icon>
               </div>
             </div>
-            <div className="curtidas">
+            <div class="curtidas">
               <img src={props.srcCurtidas} alt={props.altCurtidas}/>
-              <div className="texto" data-test="likes-number">
+              <div class="texto" data-test="likes-number">
                 Curtido por <strong>{props.altCurtidas}</strong> e <strong>outras {curtidas} pessoas</strong>
               </div>
             </div>

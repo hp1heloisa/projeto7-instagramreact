@@ -6,7 +6,7 @@ export default function Posts() {
         <Post srcUsuario="assets/img/perfiluniverso.webp" altUsuario="discoveryuniverse"
         srcConteudo="assets/img/bruce.jpeg" altConteudo="bruce"
         srcCurtidas="assets/img/einstein.jpeg" altCurtidas="physics"
-        numero="240.128"/>,
+        numero="24.128.190"/>,
         <Post srcUsuario="assets/img/meowed.svg" altUsuario="meowed" 
         srcConteudo="assets/img/gato-telefone.svg" altConteudo="gato-telefone"
         srcCurtidas="assets/img/respondeai.svg" altCurtidas="respondeai"
